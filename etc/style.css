@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.head, .foot {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 8px;
+}
+
+/* I'm learning that I don't understand flex at all */
+
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.head h1 {
+    margin: 0px 4px;
+    line-height: 48px;
+    font-size: 40px;
+}
+
+.head div {
+    margin: 0px 4px;
+}
+
+.foot {
+    justify-content: flex-end;
+    clear: both;
+}
+
+.foot img {
+    padding: 0px 8px;
+}
+
+.even {
+    background-color: white;
+    padding: 16px;
+}
+
+.odd {
+    background-color: lightblue;
+    padding: 16px;
+}
+
+.row-clear {
+    clear: both;
+}
+
+.column {
+    width: 50%;
+    float: left;
+    padding-bottom: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.button {
+    background-color: inherit;
+    border-radius: 4px;
+    color: White;
+    height: 48px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 48px;
+    font-size: 20px;
+    transition-duration: 0.4s;
+}
+
+.button p {
+    margin: 0px 16px;
+}
+
+.button:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
